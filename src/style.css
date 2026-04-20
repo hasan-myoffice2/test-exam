@@ -1,15 +1,23 @@
 :root {
+  --heading-font-size: 45px;
   --primary-font-size: 36px;
   --h4-font-size: 18px;
   --secondary-font-size: 20px;
-  --paragraph-font-size: 17px;
-  --li-font-size: 14px;
+  --peragraph-font-size: 16px;
   --primary-color: #1b6442;
   --white-color: #fff;
   --secondery-color: #24272c;
   --text-color: #535353;
   --second-bg-color: #f8f9fa;
   --poppins-font: "Inter", sans-serif;
+  --active-color: #1b6442;
+  /* peragraph-hover */
+  --pera-hover-color: #1b6442;
+  /* btn font size & color  */
+  --btn-font-size: 18px;
+  --btn-color: white;
+  --btn-bg-color: #1b6442;
+  --btn-hover-color: #103c27;
 }
 
 * {
@@ -41,6 +49,18 @@ nav {
       display: flex;
       align-items: center;
       gap: 2rem;
+      .active {
+        color: var(--active-color);
+      }
+      li {
+        font-size: var(--peragraph-font-size);
+        color: var(--text-color);
+        font-weight: 600;
+        transition: all 0.4s ease;
+      }
+      li:hover {
+        color: var(--pera-hover-color);
+      }
     }
     .icons {
       display: none;
@@ -52,7 +72,10 @@ nav {
   .nav-container {
     width: 90% !important;
   }
-
+  h1 {
+    font-size: 26px !important;
+    line-height: 2.5rem !important;
+  }
   .nav-menu li {
     display: none;
   }
@@ -88,8 +111,8 @@ nav {
   .agency {
     color: var(--primary-color);
   }
-  h2 {
-    font-size: 40px;
+  h1 {
+    font-size: var(--heading-font-size);
     margin-bottom: 1.5rem;
     color: var(--secondery-color);
     margin-top: 1rem;
@@ -97,6 +120,7 @@ nav {
   }
   p {
     margin-bottom: 2rem;
+    font-size: var(--peragraph-font-size);
     color: var(--text-color);
   }
   .btn-group {
@@ -104,30 +128,29 @@ nav {
     align-items: center;
     gap: 10px;
     .btn-1 {
-      padding: 10px 18px;
-      background-color: transparent;
-      background-color: var(--primary-color);
-      color: var(--white-color);
+      padding: 10px 22px;
       border-radius: 2rem;
-      font-size: 18px;
+      background-color: transparent;
       border: none;
+      font-size: var(--btn-font-size);
+      color: var(--btn-color);
+      background-color: var(--btn-bg-color);
       transition: all 0.4s ease;
     }
-    .btn-one:hover {
-      background-color: #103c27;
+    .btn-1:hover {
+      background-color: var(--btn-hover-color);
     }
     .btn-2 {
       padding: 10px 22px;
-      border: 1px solid var(--primary-color);
+      border: 1px solid var(--btn-bg-color);
       border-radius: 2rem;
-      color: var();
-      font-size: 18px;
       background-color: transparent;
+      font-size: var(--btn-font-size);
       transition: all 0.4s ease;
     }
     .btn-2:hover {
-      background-color: var(--primary-color);
-      color: var(--white-color);
+      background-color: var(--btn-bg-color);
+      color: var(--btn-color);
     }
   }
 }
@@ -161,6 +184,7 @@ nav {
   }
   p {
     color: var(--text-color);
+    font-size: var(--peragraph-font-size);
     line-height: 1.5rem;
   }
 }
@@ -264,6 +288,7 @@ nav {
       }
       p {
         margin-bottom: 1rem;
+        font-size: var(--peragraph-font-size);
         line-height: 1.5rem;
         color: var(--text-color);
       }
@@ -273,19 +298,21 @@ nav {
       ul li {
         line-height: 2rem;
         color: var(--text-color);
+        font-size: var(--peragraph-font-size);
       }
       .about-btn {
         padding: 10px 22px;
         font-size: var(--peragraph-font-size);
         margin-top: 1rem;
-        background-color: var(--primary-color);
+        background-color: var(--btn-bg-color);
         border: none;
         border-radius: 2rem;
-        color: var(--second-bg-color);
+        color: var(--btn-color);
         transition: all 0.4s ease;
+        font-size: var(--btn-font-size);
       }
       .about-btn:hover {
-        background-color: #103c27;
+        background-color: var(--btn-hover-color);
       }
     }
   }
@@ -323,11 +350,11 @@ nav {
   }
   h2 {
     margin-bottom: 1rem;
-    color: #24272c;
+    color: var(--secondery-color);
     font-size: var(--primary-font-size);
   }
   p {
-    color: var(--paragraph-font-size);
+    font-size: var(--peragraph-font-size);
     color: var(--text-color);
   }
 }
@@ -360,7 +387,7 @@ nav {
         font-size: var(--secondary-font-size);
       }
       h4 {
-        font-size: var(--peragraph-font-size);
+        font-size: var(--h4-font-size);
         font-weight: normal;
         margin-top: 0.3rem;
       }
@@ -400,10 +427,12 @@ nav {
     h2 {
       margin-bottom: 1rem;
       font-size: var(--primary-font-size);
+      color: var(--secondery-color);
     }
     p {
       color: var(--text-color);
       line-height: 1.5rem;
+      font-size: var(--peragraph-font-size);
     }
   }
 
@@ -440,20 +469,20 @@ nav {
       padding: 10px 20px;
       display: flex;
       margin: auto;
-      font-size: 18px;
-      font-weight: bold;
+      font-size: var(--btn-font-size);
+      font-weight: 600;
       margin-top: 1.5rem;
       border-radius: 2rem;
       border: none;
-      border: 1px solid #198754;
-      color: #198754;
+      background-color: var(--btn-bg-color) !important;
+      color: var(--btn-color);
       font-weight: 400;
       margin-bottom: 2rem;
       transition: all 0.4s ease;
     }
     button:hover {
-      background-color: #198754;
-      color: #fff;
+      background-color: var(--btn-hover-color) !important;
+      color: var(--btn-color);
     }
   }
   .list-items {
@@ -463,6 +492,7 @@ nav {
     gap: 1rem;
     li {
       color: var(--text-color);
+      font-size: var(--peragraph-font-size);
     }
   }
 }
@@ -494,16 +524,18 @@ nav {
       color: var(--primary-color);
       font-weight: normal;
       margin-bottom: 1rem;
+      font-size: var(--h4-font-size);
       letter-spacing: 1px;
     }
     h2 {
       margin-bottom: 1rem;
       color: var(--secondery-color);
+      font-size: var(--primary-font-size);
     }
     p {
       margin-bottom: 2rem;
       color: var(--text-color);
-      font-size: 17px;
+      font-size: var(--peragraph-font-size);
       line-height: 1.5rem;
     }
   }
@@ -539,12 +571,13 @@ nav {
     color: var(--secondery-color);
     line-height: 1.5rem;
     margin-bottom: 1rem;
-    font-size: var(--h4-font-size);
+    font-size: var(--secondary-font-size);
     font-weight: 600;
   }
   p {
     color: var(--text-color);
     margin-bottom: 0.7rem;
+    font-size: var(--peragraph-font-size);
     line-height: 1.4rem;
   }
 }
@@ -593,6 +626,7 @@ nav {
     h2 {
       font-size: var(--primary-font-size);
       margin-bottom: 10px;
+      color: var(--secondery-color);
       font-weight: 600;
     }
 
@@ -656,7 +690,7 @@ form {
 
   button {
     margin-top: 15px;
-    background: var(--primary-color);
+    background-color: var(--btn-bg-color);
     color: var(--white-color);
     padding: 12px 25px;
     border: none;
@@ -666,7 +700,8 @@ form {
     transition: 0.4s;
   }
   button:hover {
-    background-color: var(--primary-color);
+    background-color: var(--btn-hover-color);
+    color: var(--btn-color);
   }
 }
 /* ✅ RESPONSIVE */

@@ -27,7 +27,7 @@
     <div class="hero-section">
       <div class="title-aria">
         <span class="agency">- Consulting Agency</span>
-        <h2>Businees & Technology Consulting</h2>
+        <h1>Businees & Technology Consulting</h1>
         <p>Digital, business & technology consulting for business resilience.</p>
         <div class="btn-group">
           <button class="btn-1">Get registered</button>
