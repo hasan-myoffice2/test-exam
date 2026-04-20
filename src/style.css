@@ -583,9 +583,11 @@ nav {
 }
 .card-content button {
   background-color: transparent;
-  font-size: var(--peragraph-font-size);
+  font-size: var(--btn-font-size);
+  margin-bottom: 8px;
+  margin-top: 6px;
   border: none;
-  color: var(--primary-color);
+  color: var(--active-color);
 }
 
 @media (max-width: 991.98px) {
