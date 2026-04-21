@@ -23,19 +23,21 @@
   <!-- Header Section End-->
 
   <!-- Hero Section -->
-  <section>
-    <div class="hero-section">
-      <div class="title-aria">
-        <span class="agency">- Consulting Agency</span>
-        <h1>Businees & Technology Consulting</h1>
-        <p>Digital, business & technology consulting for business resilience.</p>
-        <div class="btn-group">
-          <button class="btn-1">Get registered</button>
-          <button class="btn-2">Learn more</button>
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-container">
+        <div class="right-site">
+          <span class="agency">- Consulting Agency</span>
+          <h1>Businees & Technology Consulting</h1>
+          <p>Digital, business & technology consulting for business resilience.</p>
+          <div class="btn-group">
+            <button class="btn-one">Get registared</button>
+            <button class="btn-two">Learn More</button>
+          </div>
         </div>
-      </div>
-      <div class="image">
-        <img src="/public/images/hero.jpg" alt="images">
+        <div class="left-site">
+          <img class="image" src="/public/images/hero.jpg" alt="images">
+        </div>
       </div>
     </div>
   </section>
